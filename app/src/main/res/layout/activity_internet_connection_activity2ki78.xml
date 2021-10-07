@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_yellow_2_2ki78"
+    tools:context=".WebActivity2ki78">
+
+
+    <View
+        android:id="@+id/v_web_2ki78"
+        android:layout_width="233dp"
+        android:layout_height="216dp"
+        android:background="@drawable/custom_view_2ki78"
+        android:transitionName="view_internet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_internet_2ki78"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0"
+        android:gravity="center"
+        android:text="@string/no_internet_connection_2ki78"
+        android:textColor="@color/black_2ki78"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/v_web_2ki78"
+        app:layout_constraintStart_toStartOf="@+id/v_web_2ki78"
+        app:layout_constraintTop_toTopOf="@+id/v_web_2ki78" />
+
+    <Button
+        android:id="@+id/b_internet_2ki78"
+        android:layout_width="93dp"
+        android:layout_height="39dp"
+        android:alpha="0"
+        android:background="@drawable/custom_button_internet_2ki78"
+        android:gravity="center"
+        android:text="@string/reconnect_2ki78"
+        android:textAllCaps="false"
+        android:textColor="@color/black_2ki78"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/v_web_2ki78"
+        app:layout_constraintEnd_toEndOf="@+id/v_web_2ki78"
+        app:layout_constraintStart_toStartOf="@+id/v_web_2ki78"
+        app:layout_constraintTop_toBottomOf="@+id/tv_internet_2ki78" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

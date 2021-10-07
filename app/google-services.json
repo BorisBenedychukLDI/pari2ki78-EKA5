@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "750446990600",
+    "project_id": "comparimkamachascom",
+    "storage_bucket": "comparimkamachascom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750446990600:android:4a7b19744a9cbe396488bd",
+        "android_client_info": {
+          "package_name": "com.parimka.machas.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750446990600-t80qjdtumh01rh90u6bm10elra7nv69b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFVy6oxqKL7rfyw83UNWw2WcU7mBo8wtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750446990600-t80qjdtumh01rh90u6bm10elra7nv69b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
