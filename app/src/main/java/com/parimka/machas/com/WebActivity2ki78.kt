@@ -8,6 +8,7 @@ import android.net.Uri
 import android.net.http.SslError
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.view.View
 import android.webkit.*
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +33,8 @@ class WebActivity2ki78 : AppCompatActivity() {
         circleChecker2ki78()
     }
 
-    override fun onBackPressed() = if (wv2ki78.canGoBack() && wv2ki78.isFocused) wv2ki78.goBack() else super.onBackPressed()
+    override fun onBackPressed() =
+        if (wv2ki78.canGoBack() && wv2ki78.isFocused) wv2ki78.goBack() else super.onBackPressed()
 
     override fun onActivityResult(requestCode2ki78: Int, resultCode2ki78: Int, data2ki78: Intent?) {
         if (filePathCallBack2ki78 != null && requestCode2ki78 == 0) {
@@ -48,7 +50,7 @@ class WebActivity2ki78 : AppCompatActivity() {
         super.onActivityResult(requestCode2ki78, resultCode2ki78, data2ki78)
     }
 
-    private fun splashAnimation2ki78 () {
+    private fun splashAnimation2ki78() {
         findViewById<View>(R.id.v_web_2ki782).let { circleWeb2ki78 ->
             AnimatorSet().play(
                 ObjectAnimator.ofPropertyValuesHolder(
@@ -82,15 +84,15 @@ class WebActivity2ki78 : AppCompatActivity() {
         }
     }
 
-    private fun returnCircle2ki78 () {
+    private fun returnCircle2ki78() {
         findViewById<View>(R.id.v_web_2ki782).run {
-            animate().alpha(1f).run { duration = 500}
+            animate().alpha(1f).run { duration = 500 }
             animate().scaleX(1f).run { duration = 500 }
             animate().scaleY(1f).run { duration = 500 }
         }
     }
 
-    private fun WebActivity2ki78.circleChecker2ki78 () {
+    private fun WebActivity2ki78.circleChecker2ki78() {
         lifecycleScope.launch {
             delay(500)
             splashAnimation2ki78()
